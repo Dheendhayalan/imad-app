@@ -30,8 +30,8 @@ app.get('/test-db' , function (req, res){
         }else{
             res.send(JSON.Stringify(result.rows));
         }
-    })
-})
+    });
+});
 app.get('/art-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'art-one.html'));
 });
